@@ -110,6 +110,14 @@ Para generar una nueva clave SSH, puedes usar el siguiente comando. Asegúrate d
 
 Después de ejecutar el comando, te pedirá que especifiques la ubicación del archivo en el que quieres guardar la clave. Puedes presionar enter para aceptar la ubicación predeterminada. Luego, te pedirá una contraseña segura para la clave.
 
+### Agrega tu clave SSH al ssh-agent:
+
+    - Asegúrate de que el ssh-agent esté en ejecución ejecutando 
+      ```bash 
+      eval "$(ssh-agent -s)".
+        ```
+   - Añade tu clave SSH privada al ssh-agent con ssh-add ~/.ssh/tu_clave_privada, sustituyendo tu_clave_privada por el nombre de tu archivo de clave privada (por ejemplo, id_ed25519).
+
 ## Comandos Adicionales
 
 - **Comprobar Conexión con Repositorio Remoto**
