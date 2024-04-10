@@ -104,18 +104,19 @@ Este repositorio sirve como una guía rápida y un recordatorio de los comandos 
 
 Para generar una nueva clave SSH, puedes usar el siguiente comando. Asegúrate de reemplazar "tu_email@example.com" con tu dirección de correo electrónico real. Este comando crea una nueva clave SSH, usando el correo electrónico proporcionado como una etiqueta.
 
-  ```bash
+ ```bash
   ssh-keygen -t rsa -b 4096 -C "tu_email@example.com"
-  ```
+```
 
 Después de ejecutar el comando, te pedirá que especifiques la ubicación del archivo en el que quieres guardar la clave. Puedes presionar enter para aceptar la ubicación predeterminada. Luego, te pedirá una contraseña segura para la clave.
 
 ### Agrega tu clave SSH al ssh-agent:
 
     - Asegúrate de que el ssh-agent esté en ejecución ejecutando 
-      ```bash 
+     
+ ```bash 
       eval "$(ssh-agent -s)".
-        ```
+```
    - Añade tu clave SSH privada al ssh-agent con ssh-add ~/.ssh/tu_clave_privada, sustituyendo tu_clave_privada por el nombre de tu archivo de clave privada (por ejemplo, id_ed25519).
 
 ## Comandos Adicionales
