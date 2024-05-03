@@ -80,6 +80,13 @@ Este repositorio sirve como una guía rápida y un recordatorio de los comandos 
   ```bash
   git log
   ```
+En detalle:
+```sh
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+%h: Muestra el hash abreviado del commit. Este es un identificador corto para el commit, más fácil de leer y manejar que el hash completo.
+
+%an: Muestra el nombre del autor del commit. Este es el individuo que realizó los cambios y ejecutó el commit.
 
 ## Ejemplo de ALIAS
 
